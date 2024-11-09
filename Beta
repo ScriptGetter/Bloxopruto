@@ -1,0 +1,91 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+
+local Window = OrionLib:MakeWindow({Name = "Universal Scripts", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+
+local Main = Window:MakeTab({
+	Name = "*Credits*",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+OrionLib:MakeNotification({
+	Name = "This Was Made By EnchantedV4000",
+	Content = "I Tried my best to make this script please support me",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})
+
+Main:AddButton({
+	Name = "Made By EnchantedV4000",
+	Callback = function()
+      		print("button pressed")
+  	end    
+})
+
+Main:AddButton({
+	Name = "Join The Discord By Just Clicking this button",
+	Callback = function()
+	local Players = game:GetService("Players")
+local player = Players.LocalPlayer
+
+local function copyToClipboard(text)
+    if setclipboard then
+        setclipboard(text)
+        print("Link copied to clipboard: " .. text)
+    else
+        warn("setclipboard is not available in this environment.")
+    end
+end
+
+
+local link = "https://discord.gg/J7uYrwCNuy"
+copyToClipboard(link)
+      		print("button pressed")
+  	end    
+})
+
+local Main = Window:MakeTab({
+	Name = "Blox Fruit",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+Main:AddButton({
+	Name = "Mtriett Hub",
+	Callback = function()
+      		print("button pressed")
+  	end    
+})
+
+Main:AddButton({
+	Name = "Attack Hub",
+	Callback = function()
+	_G.Team = "Pirate" --Pirate or Marine
+loadstring(game:HttpGet("https://raw.githubusercontent.com/KOBENFF/sdfd/refs/heads/main/Koatta.txt"))()
+      		print("button pressed")
+  	end    
+})
+
+Main:AddButton({
+	Name = "Damon Hub",
+	Callback = function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/daucobonhi/seagame/main/Damonvip.lua"))()
+      		print("button pressed")
+  	end    
+})
+
+Main:AddButton({
+	Name = "Min Gaming Hub",
+	Callback = function()
+	loadstring(game:HttpGet"https://pastebin.com/raw/gteQm30R")()
+      		print("button pressed")
+  	end    
+})
+
+Main:AddButton({
+	Name = "Ratio Hub",
+	Callback = function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/Efe0626/RaitoHub/main/Script"))()
+      		print("button pressed")
+  	end    
+})
